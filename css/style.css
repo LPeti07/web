@@ -1,0 +1,502 @@
+* {
+    background-color: #E5E5CB;
+    color: #1A120B;
+    font-family: "Nunito", sans-serif;
+}
+
+html {
+    font-size: 100%;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p, a, th, td, label, li, caption, button {
+    font-size: 1rem;
+}
+
+body {
+    margin: 0;
+    background-color: #E5E5CB;
+    color: #1A120B;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 100%;
+}
+
+main a {
+    text-decoration: underline;
+}
+
+main a:link {
+    color: #3C2A21; 
+    font-weight: bold;
+}
+
+main a:visited {
+    color: #8B6D4F; 
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#icons a img {
+    width: 30px;
+    margin: 0% 10% 10% 10%;
+}
+
+header, header *, footer, footer * {
+    background-color: #3C2A21;
+    color: #D5CEA3;
+}
+
+header {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-right: 3%;
+}
+
+#s_logo {
+    width: 10%;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+}
+
+header nav a:link {
+    color: #D5CEA3; 
+}
+
+header nav a:visited {
+    color: #A39D73; 
+}
+
+header nav a:hover {
+    color: #E5E5CB;
+}
+
+header nav a:active {
+    color: #8B6D4F;
+}
+
+#current {
+    color: #D5CEA3;
+    text-decoration: none;
+}
+
+#main_banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1px 10px;
+    background-color: #8B6D4F;
+    margin: 2%;
+    border: 2px solid #1A120B;
+    border-radius: 10px;
+}
+
+#main_banner * {
+    background-color: #8B6D4F;
+}
+
+#main_banner h1 {
+    text-align: center;
+}
+
+#main_banner h2 {
+    text-align: center;
+}
+
+
+#main_banner img {
+    width: 60%;
+    height: auto;
+    align-self: center;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #1A120B;
+}
+
+figure {
+    margin: 0;
+}
+
+.content_row {
+    display: flex;
+    margin: 2%;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.text_content, .media_content {
+    width: 48%;
+}
+
+.media_content {
+    margin-top: 3rem;
+}
+
+.media_content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #1A120B;
+}
+
+.media_content video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #1A120B;
+}
+
+figcaption {
+    text-align: center;
+}
+
+
+h1, h2{
+    font-family: "Bitter", serif;
+}
+
+p {
+    font-family: "Nunito", sans-serif;
+}
+
+footer {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#title_banner {
+    background-color: #8B6D4F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title_banner h1 {
+    background-color: #8B6D4F;
+}
+
+#menu {
+    background-image: url(../media/menu_hatter.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    height: 100%;
+    width: auto;
+}
+
+
+table {  
+    background-color: rgb(255, 255, 255);
+    border-collapse: collapse;
+}
+
+caption {
+    caption-side: bottom;
+}
+
+th {
+    font-family: "Bitter", serif;
+    background-color: #3C2A21;
+    color: #D5CEA3;
+}
+
+td {
+    padding: 1% 1%;
+    border: 1px solid black;
+    min-width: 100px;
+    text-align: center;
+}
+
+h3, li p {
+    margin: 0px;
+}
+
+#kapcsolat {
+    width: 48%;
+}
+
+#kapcsolat img {
+    width: 100%;
+    height: auto;
+}
+
+#contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+#foglalás {
+    width: 38%;
+    background-color: #8B6D4F;
+    margin: 5% 2% 5% 0%;
+    border: 2px #1A120B solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 25px 20px;
+    box-sizing: border-box;
+}
+
+#foglalás form, #foglalás form label, #foglalás form p{
+    background-color: #8B6D4F;
+    font-weight: bold;
+}
+
+#foglalás h2 {
+    background-color: #8B6D4F;
+    border-bottom: 2px #1A120B solid;
+    text-align: center;
+    width: 100%;
+}
+
+#név, #email {
+    width: 80%;
+    margin-bottom: 2%;
+}
+
+#dátum {
+    width: 50%;
+    margin-bottom: 2%;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+input[type="checkbox"] {
+    margin-bottom: 5%;
+}
+
+button {
+    width: 48%;
+}
+
+input[type="submit"] {
+    width: 48%;
+}
+
+#érdekesség {
+    background-color: #D5CEA3;
+    border-left: 5px solid #3C2A21;
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 5px;
+    color: #1A120B;
+}
+
+#érdekesség h3 {
+    background-color: #D5CEA3;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #3C2A21;
+}
+
+#érdekesség p {
+    background-color: #D5CEA3;
+    margin: 0;
+    font-style: italic;
+}
+
+#font-changer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#font-changer label {
+    color: #D5CEA3;
+    font-weight: bold;
+}
+
+#font-changer select {
+    padding: 5px;
+    background-color: #8B6D4F;
+    color: #1A120B;
+    border: 1px solid #1A120B;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+    cursor: pointer;
+}
+
+#font-changer select:hover {
+    background-color: #D5CEA3;
+    color: #3C2A21;
+}
+
+body.hc-mode, 
+body.hc-mode * {
+    background-color: #000000 !important;
+    color: #FFFF00 !important;
+    border-color: #FFFF00 !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+
+body.hc-mode a, 
+body.hc-mode a * {
+    color: #00FFFF !important;
+    text-decoration: underline !important;
+}
+
+body.hc-mode input, 
+body.hc-mode textarea, 
+body.hc-mode button,
+body.hc-mode select {
+    border: 2px solid #FFFF00 !important;
+}
+
+body.large-text-mode p, 
+body.large-text-mode a, 
+body.large-text-mode th, 
+body.large-text-mode td, 
+body.large-text-mode label, 
+body.large-text-mode li, 
+body.large-text-mode caption,
+body.large-text-mode button,
+body.large-text-mode input,
+body.large-text-mode textarea,
+body.large-text-mode select,
+body.large-text-mode summary {
+    font-size: 1.5rem !important;
+}
+
+body.large-text-mode h1 {
+    font-size: 3rem !important;
+}
+
+body.large-text-mode h2 {
+    font-size: 2.2rem !important;
+}
+
+body.large-text-mode h3 {
+    font-size: 1.8rem !important;
+}
+
+.skip {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip:focus {
+    position: static;
+    display: block;
+    width: 100%;
+    background-color: #3C2A21;
+    color: #D5CEA3;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    z-index: 9999;
+    outline: 2px solid #FFFF00;
+}
+
+@media screen and (max-width: 1024px) {
+    .content_row, #contact {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .text_content, .media_content, #kapcsolat, #foglalás {
+        width: 85%;
+        margin-bottom: 30px;
+    }
+
+    header {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px 5%;
+    }
+    
+    header nav {
+        margin: 15px auto;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text_content, .media_content, #kapcsolat, #foglalás {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    #foglalás {
+        width: 70%;
+    }
+
+    #main_banner {
+        margin: 0;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+
+    #s_logo {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.3rem; }
+    
+    #font-changer {
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    footer {
+        text-align: center;
+    }
+    #icons a img {
+        margin: 10px;
+    }
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/print.css" media="print">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <title>Code&Coffee főoldal</title>
+</head>
+
+<body>
+    <a href="#fő_tartalom" class="skip">Ugrás a fő tartalomra</a>
+    <header>
+        <img src="media/code&coffee_logo.png" alt="code&coffee logója" title="code&coffee logója" id="s_logo">
+        <nav>
+            <a href="index.html" id="current" aria-current="page">Főoldal</a>
+            <a href="menu.html">Étlap</a>
+            <a href="contact.html">Kapcsolat</a>
+        </nav>
+
+        <div id="font-changer">
+            <label for="style-selector">Stílus:</label>
+            <select id="style-selector" onchange="changeAccessibilityStyle(this.value)">
+                <option value="normal">Normál</option>
+                <option value="large">Nagy betűméret</option>
+                <option value="contrast">Nagy kontraszt</option>
+                <option value="large-contrast">Nagy betűméret + Nagy kontraszt</option>
+            </select>
+        </div>
+    </header>
+
+    <main id="fő_tartalom">
+        <div id="main_banner">
+            <h1>Üdvözlünk a <span lang="en">Code&Coffee</span> Kézműves Kávézó oldalán!</h1>
+            <h2>Ahol a jó kódok és a tökéletes eszpresszók születnek.</h2>
+            <img src="media/kávé&laptop.png" alt="Az asztalon egy gőzölgő csésze kávé mögött laptop"
+                title="Az asztalon egy gőzölgő csésze kávé mögött laptop">
+        </div>
+
+        <section class="content_row">
+            <div class="text_content">
+                <h2>Rólunk</h2>
+                <p>
+                    A <span lang="en">Code&Coffee</span> 2026-ban nyitotta meg kapuit azzal a céllal, hogy a város
+                    legfinomabb <strong>világos
+                        pörkölésű <span lang="en">specialty</span> kávéit</strong> kínálja egy nyugodt, inspiráló
+                    környezetben. Baristáink
+                    szenvedéllyel készítik el kedvenc italodat, legyen az egy klasszikus
+                    <span lang="it">espresso</span>, vagy egy krémes <em lang="en">flat white</em>. Kávébabjainkat
+                    közvetlenül <strong>kolumbiai és etióp farmerektől</strong>
+                    szerezzük be, melyeket hazai partnereink frissen pörkölnek, garantálva a <em>fenntarthatóságot</em>
+                    és a prémium minőséget. Ha kedvet kaptál, <a href="contact.html">foglalj asztalt nálunk!</a>
+                </p>
+                <aside id="érdekesség">
+                    <h3>Tudtad-e?</h3>
+                    <p>Az etióp kávébabok jellegzetesen gyümölcsös, virágos ízvilágukról híresek, míg a kolumbiai kávék
+                        inkább csokoládés, karamelles jegyeket hordoznak. Nálunk mindkettőt megkóstolhatod!</p>
+                </aside>
+            </div>
+            <figure class="media_content">
+                <a href="media/Under_construction.png" target="_blank">
+                    <img src="media/Under_construction_thumbnail.png" alt="Üzletünk építés alatt"
+                        title="Üzletünk építés alatt (Nagyobb méret megtekintése)">
+                </a>
+                <figcaption>Üzletünk építés alatt (2025)</figcaption>
+            </figure>
+        </section>
+
+        <section class="content_row">
+            <div class="text_content">
+                <h2>Találd meg a kedvenc ízeidet nálunk!</h2>
+                <p>
+                    Sokan kérdezik: mi a titka a <strong>tökéletes kávénak</strong>? Mi a <span
+                        lang="en">Code&Coffee</span>-nál hiszünk
+                    abban, hogy a kávézás
+                    nem tudomány, hanem <em>tiszta élvezet</em>. Legyen szó a karakteres <strong>házunk
+                        eszpresszójáról</strong> vagy egy izgalmas,
+                    gyümölcsösebb variációról, segítünk eligazodni az ízek világában. Nem kell kávészakértőnek lenned
+                    ahhoz, hogy nálunk jól érezd
+                    magad - elég, ha szereted a minőséget. Nézd meg videónkat, és tudd meg, hogyan válogatjuk és
+                    készítjük el neked a
+                    <strong>legfrissebb pörköléseket</strong>!
+                </p>
+            </div>
+            <figure class="media_content">
+                <video src="media/kávé_betekintés.mp4" poster="media/video_thumbnail.png" controls></video>
+                <figcaption>
+                    <details>
+                        <summary>videó részletes leírása</summary>
+                        <p>
+                            <strong>[0:00 - 0:09] Képi események:</strong> Pörgős, ritmusos zene indul. Egy barista
+                            látható a kávézó pultja mögött, amint egy <span lang="en">Workshop Coffee</span> logóval
+                            ellátott papírpoharat tesz le. Egy szűrőtartót helyez egy digitális mérlegre,
+                            majd a darálóból friss kávét őröl bele. A kávéval teli szűrőt újra leméri, a kijelző 16,0
+                            grammot mutat.<br>
+                            <strong>Narrátor hangja:</strong> "A kávé lényegében egy alapanyag. Bármelyik pillanatban a
+                            világ különböző részein más-más íze van. Követni kell a termesztési és betakarítási
+                            szezonokat, például Kenyában, Etiópiában, Ruandában, Dél- és Közép-Amerikában, hogy a lehető
+                            legjobb kávét találjuk meg."
+                        </p>
+                        <p>
+                            <strong>[0:10 - 0:21] Képi események:</strong> A narrátor (egy fiatal férfi) megjelenik a
+                            képernyőn, és közvetlenül a kamerába beszél. Ezután a kávézó belső tere látható távolabbról,
+                            ahol a barista épp kávét készít. Fehér csomagolású <span lang="en">Workshop Coffee</span>
+                            kávébabos zacskók sorakoznak a pulton. Egy üvegtartályban kávébabokat láthatunk, majd egy
+                            eszpresszógép világító digitális kijelzőjét. A barista ezután precízen letömöríti
+                            a kávéőrleményt.<br>
+                            <strong>Narrátor hangja:</strong> "Mi beszerezzük ezt a kávét. Megpörköljük, és végül
+                            felszolgáljuk. És mivel a folyamat minden egyes elemében részt veszünk, így meg tudjuk
+                            találni ezeket a nagyszerű alapanyagokat..."
+                        </p>
+                        <p>
+                            <strong>[0:22 - 0:47] Képi események:</strong> A narrátor újra a kamerába beszél. A vágás
+                            után a barista a helyére rögzíti a szűrőtartót a kávégépben. Tejet önt egy fém tejkiöntőbe,
+                            majd a gép gőzkarjával gőzölni kezdi. A sötét kávé lassan kifolyik egy fehér csészébe. A
+                            barista a gőzölt tejet a kávéba önti, és egy szép <span lang="en"><em>latte art</em></span>
+                            mintát rajzol a
+                            tejhabbal. Közben kiskanalat és csészealjat készít elő a pulton.<br>
+                            <strong>Narrátor hangja:</strong> "...elhozzuk őket, és pontosan annyit teszünk velük - se
+                            többet, se kevesebbet -, amennyit kell, hogy ne rontsuk el. Igyekszünk betekintést nyújtani
+                            a kínálatunkba. Mindig van a ház eszpresszója, de mindig kínálunk egy második eszpresszót
+                            is, amit megkóstolhatsz. Ez egy kicsit más, egy kicsit játékosabb lesz. Csak tudnod kell,
+                            mit szeretsz."
+                        </p>
+                        <p>
+                            <strong>[0:48 - 0:59] Képi események:</strong> A narrátor ismét a képernyőn beszél. A
+                            háttérben a barista letörli a kávégépet, és felszolgálja az italt. A videó végén egy
+                            tökéletes, tejhabos kávé látható az asztalon egy nyugta mellett. A képsor a <span
+                                lang="en">Workshop Coffee</span> fekete-fehér logójával zárul.<br>
+                            <strong>Narrátor hangja:</strong> "Ha csak azt élvezed, hogy minden nap megiszol egy remek
+                            csésze feketekávét, akkor csináld azt. Nincs szükség kifinomult ízlésre. Csak élvezned kell
+                            a kávét, ennyi elég."
+                        </p>
+                    </details>
+                </figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p><b>© <span lang="en">Copyright Code & Coffee</span></b></p>
+        <div id="icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="media/facebook_logo.png" alt="Facebook oldalunk" title="Kövess minket facebookon!">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="media/instagram_logo.png" alt="Instagram oldalunk" title="Kövess minket instagramon!">
+            </a>
+            <a href="https://www.google.com/maps/place/Budapest,+Pázmány+Péter+stny.+1%2FA,+1117/@47.4745763,19.0617287,17z/data=!3m1!4b1!4m6!3m5!1s0x4741ddaaf46cfc7d:0x3621cb6fd0c8825d!8m2!3d47.4745763!4d19.0617287!16s%2Fg%2F11_sww6sc?entry=ttu&g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank">
+                <img src="media/google_maps_logo.png" alt="Térkép a kávézóhoz" title="látogass el hozzánk!">
+            </a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

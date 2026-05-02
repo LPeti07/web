@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/print.css" media="print">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <title>Code&Coffee étlap</title>
+</head>
+
+<body>
+    <a href="#fő_tartalom" class="skip">Ugrás a fő tartalomra</a>
+    <header>
+        <img src="media/code&coffee_logo.png" alt="code&coffee logója" title="code&coffee logója" id="s_logo">
+        <nav>
+            <a href="index.html">Főoldal</a>
+            <a href="menu.html" id="current" aria-current="page">Étlap</a>
+            <a href="contact.html">Kapcsolat</a>
+        </nav>
+
+        <div id="font-changer">
+            <label for="style-selector">Stílus:</label>
+            <select id="style-selector" onchange="changeAccessibilityStyle(this.value)">
+                <option value="normal">Normál</option>
+                <option value="large">Nagy betűméret</option>
+                <option value="contrast">Nagy kontraszt</option>
+                <option value="large-contrast">Nagy betűméret + Nagy kontraszt</option>
+            </select>
+        </div>
+    </header>
+
+    <main id="fő_tartalom">
+        <div id="title_banner">
+            <h1>Kávé- és étlap</h1>
+        </div>
+        <div id="menu">
+            <table>
+                <caption>
+                    <details>
+                        <summary>Fontos információk az étlapról</summary>
+                        <p>Aktuális ajánlatunk <strong>allergénjeiről</strong> érdeklődjön kollégáinknál!
+                        (A napi sütemény összetétele <em>változó</em>).</p>
+                    </details>
+                </caption>
+                <tr id="head">
+                    <th scope="col">Termék</th>
+                    <th scope="col">Méret</th>
+                    <th scope="col">Ár</th>
+                    <th scope="col">Allergének</th>
+                </tr>
+                <tr>
+                    <td lang="it">Espresso</td>
+                    <td>30 ml</td>
+                    <td>490 Ft</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td lang="it">Cappuccino</td>
+                    <td>200 ml</td>
+                    <td>750 Ft</td>
+                    <td>Tej</td>
+                </tr>
+                <tr>
+                    <td lang="it">Latte Macchiato</td>
+                    <td>300 ml</td>
+                    <td>890 Ft</td>
+                    <td>Tej</td>
+                </tr>
+                <tr>
+                    <td lang="en">Flat White</td>
+                    <td>180 ml</td>
+                    <td>950 Ft</td>
+                    <td>Tej</td>
+                </tr>
+                <tr>
+                    <td lang="it">Americano</td>
+                    <td>250 ml</td>
+                    <td>650 Ft</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Forró csokoládé</td>
+                    <td>250 ml</td>
+                    <td>990 Ft</td>
+                    <td>Tej</td>
+                </tr>
+                <tr>
+                    <td>Málnás jegestea</td>
+                    <td>400 ml</td>
+                    <td>850 Ft</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Sajtos <span lang="fr">croissant</span></td>
+                    <td>80 g</td>
+                    <td>690 Ft</td>
+                    <td>Glutén, Tej, Tojás</td>
+                </tr>
+                <tr>
+                    <td>Sonkás-sajtos <span lang="it">panini</span></td>
+                    <td>150 g</td>
+                    <td>1450 Ft</td>
+                    <td>Glutén, Tej</td>
+                </tr>
+                <tr>
+                    <td>Avokádós szendvics</td>
+                    <td>180 g</td>
+                    <td>1690 Ft</td>
+                    <td>Glutén</td>
+                </tr>
+                <tr>
+                    <td>Áfonyás <span lang="en">muffin</span></td>
+                    <td>100 g</td>
+                    <td>790 Ft</td>
+                    <td>Glutén, Tojás</td>
+                </tr>
+                <tr>
+                    <td lang="en">Brownie</td>
+                    <td>120 g</td>
+                    <td>850 Ft</td>
+                    <td>Glutén, Tej, Tojás, Diófélék</td>
+                </tr>
+                <tr>
+                    <td>Napi sütemény</td>
+                    <td>szelet</td>
+                    <td>950 Ft</td>
+                    <td>(Változó)</td>
+                </tr>
+                <tr>
+                    <td>Ásványvíz</td>
+                    <td>500 ml</td>
+                    <td>450 Ft</td>
+                    <td>-</td>
+                </tr>
+            </table>
+        </div>
+
+    </main>
+
+    <footer>
+        <p><b>© <span lang="en">Copyright Code & Coffee</span></b></p>
+        <div id="icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="media/facebook_logo.png" alt="facebook ikon" title="Kövess minket facebookon!">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="media/instagram_logo.png" alt="instagram ikon" title="Kövess minket instagramon!">
+            </a>
+            <a href="https://www.google.com/maps/place/Budapest,+Pázmány+Péter+stny.+1%2FA,+1117/@47.4745763,19.0617287,17z/data=!3m1!4b1!4m6!3m5!1s0x4741ddaaf46cfc7d:0x3621cb6fd0c8825d!8m2!3d47.4745763!4d19.0617287!16s%2Fg%2F11_sww6sc?entry=ttu&g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank">
+                <img src="media/google_maps_logo.png" alt="google maps ikon" title="látogass el hozzánk!">
+            </a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

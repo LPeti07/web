@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/print.css" media="print">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <title>Code&Coffee kapcsolat</title>
+</head>
+
+<body>
+    <a href="#fő_tartalom" class="skip">Ugrás a fő tartalomra</a>
+    <header>
+        <img src="media/code&coffee_logo.png" alt="code&coffee logója" title="code&coffee logója" id="s_logo">
+        <nav>
+            <a href="index.html">Főoldal</a>
+            <a href="menu.html">Étlap</a>
+            <a href="contact.html" id="current" aria-current="page">Kapcsolat</a>
+        </nav>
+
+        <div id="font-changer">
+            <label for="style-selector">Stílus:</label>
+            <select id="style-selector" onchange="changeAccessibilityStyle(this.value)">
+                <option value="normal">Normál</option>
+                <option value="large">Nagy betűméret</option>
+                <option value="contrast">Nagy kontraszt</option>
+                <option value="large-contrast">Nagy betűméret + Nagy kontraszt</option>
+            </select>
+        </div>
+    </header>
+
+    <main id="fő_tartalom">
+        <div id="title_banner">
+            <h1>Kapcsolat és asztalfoglalás</h1>
+        </div>
+
+        <div id="contact">
+            <article id="kapcsolat">
+                <h2> Kapcsolat</h2>
+                <ul>
+                    <li>
+                        <h3>Cím:</h3>
+                        <p><strong>1117 Budapest</strong>, Pázmány Péter sétány 1/A</p>
+                    </li>
+                    <li>
+                        <h3>Nyitvatartás:</h3>
+                        <p>Hétfő - Péntek : <strong>07:30 - 19:00</strong></p>
+                        <p>Szombat - Vasárnap: <em>09:00 - 16:00</em></p>
+                    </li>
+                    <li>
+                        <h3>Email:</h3>
+                        <p><strong>info@codeandcoffee.hu</strong></p>
+                    </li>
+                    <li>
+                        <h3>Telefon:</h3>
+                        <p><strong>+36 1 234 5678</strong></p>
+                    </li>
+                </ul>
+
+                <a href="media/logo_full.png" target="_blank">
+                    <img src="media/logo_full_thumbnail.png" alt="Code&Coffee teljes logója" title="Code&Coffee teljes logója (Nagyobb méret megtekintése)">
+                </a>
+            </article>
+
+            <article id="foglalás">
+                <h2>Asztalfoglalás</h2>
+                <form action="mailto:info@codeandcoffee.hu" method="post" enctype="text/plain">
+                    <label for="név">Név:</label><br>
+                    <input type="text" id="név" name="név" maxlength="50"><br>
+
+                    <label for="email">Email cím:</label><br>
+                    <input type="text" id="email" name="email" maxlength="100"><br>
+
+                    <label for="dátum">Dátum és idő:</label><br>
+                    <input type="text" id="dátum" name="dátum" maxlength="20"><br>
+
+                    <p>Vendégek száma:</p>
+                    <input type="radio" id="1" name="Vendégek">
+                    <label for="1">1</label>
+                    <input type="radio" id="4" name="Vendégek">
+                    <label for="4">4</label><br>
+                    <input type="radio" id="2" name="Vendégek">
+                    <label for="2">2</label>
+                    <input type="radio" id="5" name="Vendégek">
+                    <label for="5">5</label><br>
+                    <input type="radio" id="3" name="Vendégek">
+                    <label for="3">3</label>
+                    <input type="radio" id="6" name="Vendégek">
+                    <label for="6">6</label><br>
+
+                    <label for="megjegyzés">Megjegyzés</label><br>
+                    <textarea name="megjegyzés" id="megjegyzés" rows="4"></textarea><br>
+
+                    <input type="checkbox" id="emlékeztető" name="emlékeztető" value="igen">
+                    <label for="emlékeztető">Kérek email emlékeztetőt a foglalásomról</label><br>
+
+                    <button type="reset">Törlés</button>
+                    <input type="submit" value="Foglalás">
+                </form>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <p><b>© <span lang="en">Copyright Code & Coffee</span></b></p>
+        <div id="icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="media/facebook_logo.png" alt="facebook ikon" title="Kövess minket facebookon!">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="media/instagram_logo.png" alt="instagram ikon" title="Kövess minket instagramon!">
+            </a>
+            <a href="https://www.google.com/maps/place/Budapest,+Pázmány+Péter+stny.+1%2FA,+1117/@47.4745763,19.0617287,17z/data=!3m1!4b1!4m6!3m5!1s0x4741ddaaf46cfc7d:0x3621cb6fd0c8825d!8m2!3d47.4745763!4d19.0617287!16s%2Fg%2F11_sww6sc?entry=ttu&g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank">
+                <img src="media/google_maps_logo.png" alt="google maps ikon" title="látogass el hozzánk!">
+            </a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
